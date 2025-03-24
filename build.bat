@@ -1,0 +1,1 @@
+gcc -shared -o nativeLib.dll -I"%JAVA_HOME%\include" -I"%JAVA_HOME%\include\win32" NativeExample.c
