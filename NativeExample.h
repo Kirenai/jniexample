@@ -15,6 +15,22 @@ extern "C" {
 JNIEXPORT void JNICALL Java_NativeExample_sayHello
   (JNIEnv *, jobject);
 
+/*
+ * Class:     NativeExample
+ * Method:    getMessage
+ * Signature: ()Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_NativeExample_getMessage
+  (JNIEnv *, jobject);
+
+/*
+ * Class:     NativeExample
+ * Method:    messageLength
+ * Signature: (Ljava/lang/String;)I
+ */
+JNIEXPORT jint JNICALL Java_NativeExample_messageLength
+  (JNIEnv *, jobject, jstring);
+
 #ifdef __cplusplus
 }
 #endif
